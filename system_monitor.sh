@@ -8,7 +8,7 @@ API_URL="https://api.telegram.org/bot${BOT_TOKEN}/sendMessage"
 CPU_THRESHOLD=85
 MEMORY_THRESHOLD=85
 NETWORK_THRESHOLD_MBPS=850  # 85% of 1 Gbps
-DISK_THRESHOLD=85
+DISK_THRESHOLD=95
 
 # Function to escape text for MarkdownV2
 escape_markdownv2() {
