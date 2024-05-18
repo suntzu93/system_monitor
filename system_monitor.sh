@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load environment variables from the .env file
-source /root/scripts/.env
+source $HOME/.env
 API_URL="https://api.telegram.org/bot${BOT_TOKEN}/sendMessage"
 
 # 85% threshold
