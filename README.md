@@ -24,10 +24,16 @@ How to run :
 ```
 cd $HOME
 wget https://raw.githubusercontent.com/suntzu93/system_monitor/main/system_monitor.sh
+wget https://raw.githubusercontent.com/suntzu93/system_monitor/main/bridge_monitor.sh
 chmod +x system_monitor.sh
+chmod +x bridge_monitor.sh
 
 # Add to crontab , script will run each minutes 
 
 CRON_JOB="* * * * * $HOME/system_monitor.sh >> /var/log/system_monitor.log 2>&1"
 (crontab -l 2>/dev/null; echo "$CRON_JOB") | crontab -
+
+CRON_JOB_BRIDGE="* * * * * $HOME/bridge_monitor.sh >> /var/log/bridge_monitor.log 2>&1"
+(crontab -l 2>/dev/null; echo "$CRON_JOB_BRIDGE") | crontab -
+
 ```
