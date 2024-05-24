@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source  $HOME/scripts/.env
+source  $HOME/.env
 validator_endpoint="http://127.0.0.1:26657/status"
 API_URL="https://api.telegram.org/bot${BOT_TOKEN}/sendMessage"
 cached_height_file="block_height.txt"
