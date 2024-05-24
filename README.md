@@ -43,7 +43,7 @@ CRON_JOB_BRIDGE="* * * * * $HOME/bridge_monitor.sh >> /var/log/bridge_monitor.lo
 
 # run on validator node server
 wget https://raw.githubusercontent.com/suntzu93/system_monitor/main/validator_monitor.sh
-chmod +x bridge_monitor.sh
+chmod +x validator_monitor.sh
 
 CRON_JOB_VALIDATOR="* * * * * $HOME/validator_monitor.sh >> /var/log/validator_monitor.log 2>&1"
 (crontab -l 2>/dev/null; echo "$CRON_JOB_VALIDATOR") | crontab -
