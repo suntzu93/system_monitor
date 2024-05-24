@@ -61,6 +61,6 @@ main(){
     main
 } || {
     # If an error occurs, send to telegram
-    echo "Bridge node monitor script crashed."
-    send_telegram_message "Bridge node monitor script crashed , server ip : $SERVER_IP"
+    echo "Validator node monitor script crashed."
+    send_telegram_message "Validator node monitor script crashed , server ip : $SERVER_IP"
 }
